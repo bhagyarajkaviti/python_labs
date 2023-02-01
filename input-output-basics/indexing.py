@@ -1,0 +1,6 @@
+username = input()
+age = input()
+print(username + " is " + age + " years old")
+print(username[0])
+print(username[1])
+print(username[2])

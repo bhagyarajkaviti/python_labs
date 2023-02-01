@@ -1,0 +1,5 @@
+word_A = input()
+word_B = input()
+print(word_B)
+print("#" * 3)
+print(word_A)

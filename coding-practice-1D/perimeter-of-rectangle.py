@@ -1,0 +1,6 @@
+l = input()
+l = int(l)
+b = input()
+b = int(b)
+perimeter = 2 * (l + b)
+print(perimeter)
