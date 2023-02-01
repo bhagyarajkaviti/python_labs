@@ -1,0 +1,6 @@
+print(45.93 <= 65.03)
+print(465739 >=463345)
+print(234 != 2544)
+print(1234 >= 1234)
+print(1234 !=1234)
+print("string abc" == "string abc")
