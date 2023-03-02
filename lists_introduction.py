@@ -9,7 +9,7 @@ print(len(list_a)) # length of the list
 list_b = [1, list_a]
 print(list_b) 
 
-print(list_a[1]) #Accessing list elements, we use indexing
+print(list_a[1][2]) #Accessing list elements, we use indexing
 
 #Iterating over a list:
 for item in list_a:
