@@ -1,12 +1,10 @@
-#Given a sentence S. The words in the sentence S are separated by a space.
-#Write a program that prints a new string by joining the third letter of each word in the sentence with the comma(, ).
-sentence_list = input().split()
+#Given space-separated words, write a program to check if the first letter and last letter of each word are the same.
+#Note: Consider both uppercase and lowercase letters as the same.
+sentence = input().lower()
+words_list = sentence.split()
 
-output = []
-for i in sentence_list:
-    if (len(i) > 2):
-        char = i[2]
-        output += [char]
-
-final_output = ",".join(output)
-print(final_output)
+for word in words_list:
+    if word[0] == word[-1]:
+        print(True)
+    else:
+        print(False)
