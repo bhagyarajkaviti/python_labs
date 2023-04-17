@@ -74,7 +74,7 @@ class Order:
         for product, quantity in self.items_in_cart:
             price = product.get_deal_price() * quantity
             total_bill += price
-            print("{}: Rs.{}".format(product.name, product.price))
+            print("{}: Rs.{}".format(product.name, product.deal_price))
         print("Total Bill: Rs.{}".format(total_bill))
      
 tv = ElectronicItem("tv", 40000, 35000, 4.9, 24)
@@ -128,7 +128,7 @@ order.display_order_bill()
 #Delivery Address: Hyderabad
 #Delivery Charge: 0
 #------Total Bill---------
-#Amul Milk: Rs.40
-#tv: Rs.40000
-#Dell laptop: Rs.45000
+#Amul Milk: Rs.35
+#tv: Rs.35000
+#Dell laptop: Rs.40000
 #Total Bill: Rs.115105
