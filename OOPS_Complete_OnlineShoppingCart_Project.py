@@ -35,6 +35,17 @@ class GroceryItem(Product):
     def display_product_details(self):
         super().display_product_details()
         print("Expiry Date: {}".format(self.expiry_date))
+        
+class Laptop(ElectronicItem):
+    def __init__(self, name, price, deal_price, rating, warranty_in_months, ram, storage):
+        super().__init__(name, price, deal_price, rating, warranty_in_months)
+        self.ram = ram
+        self.storage = storage
+        
+    def display_product_details(self):
+        super().display_product_details()
+        print("Ram: {}".format(self.ram))
+        print("Storage: {}".format(self.storage))
 
 class Order:
     delivery_charges = {"prime_members": 0, "non_prime_members": 50 }
@@ -73,19 +84,20 @@ mouse = ElectronicItem("Logitech Mouse", 500, 399, 3.9, 12)
 flour = GroceryItem("Wheet flour", 100, 90, 4.3, "29/09/2023")
 milk = GroceryItem("Amul Milk", 40, 35, 4.4, "30/03/2023")
 
+dell = Laptop("Dell laptop", 45000, 40000, 4.5, 12, "16 GB", "1 TB SSD")
+
 order = Order("prime_members", "Hyderabad")
 order.add_item(milk,3)
 order.add_item(tv,1)
+order.add_item(dell,2)
 
 order.display_order_details()
 order.display_order_bill()
 
 
+#OUTPUT:
 
-#Output
 
-
-#-----------Products in Cart------------
 #Name: Amul Milk        
 #Price: 40
 #Deal Price: 35
@@ -97,10 +109,20 @@ order.display_order_bill()
 #Name: tv
 #Price: 40000
 #Deal Price: 35000      
-#You Saved: 5000
+#You Saved: 5000        
 #Rating: 4.9
 #Warranty: 24 months
 #Quantity: 1
+#----------------------
+#Name: Dell laptop
+#Price: 45000
+#Deal Price: 40000
+#You Saved: 5000
+#Rating: 4.5
+#Warranty: 12 months
+#Ram: 16 GB
+#Storage: 1 TB SSD
+#Quantity: 2
 #----------------------
 #Delivery Speed: prime_members
 #Delivery Address: Hyderabad
@@ -108,5 +130,5 @@ order.display_order_bill()
 #------Total Bill---------
 #Amul Milk: Rs.40
 #tv: Rs.40000
-#Total Bill: Rs.35105
-
+#Dell laptop: Rs.45000
+#Total Bill: Rs.115105
