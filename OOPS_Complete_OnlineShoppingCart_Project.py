@@ -82,4 +82,31 @@ order.display_order_bill()
 
 
 
+#Output
+
+
+#-----------Products in Cart------------
+#Name: Amul Milk        
+#Price: 40
+#Deal Price: 35
+#You Saved: 5
+#Rating: 4.4
+#Expiry Date: 30/03/2023
+#Quantity: 3
+#---------------------- 
+#Name: tv
+#Price: 40000
+#Deal Price: 35000      
+#You Saved: 5000
+#Rating: 4.9
+#Warranty: 24 months
+#Quantity: 1
+#----------------------
+#Delivery Speed: prime_members
+#Delivery Address: Hyderabad
+#Delivery Charge: 0
+#------Total Bill---------
+#Amul Milk: Rs.40
+#tv: Rs.40000
+#Total Bill: Rs.35105
 
